@@ -2,6 +2,25 @@ import pytest
 import pilha
 
 
-def test_pilha():
-    pilha1 = pilha.Pilha(2)
-    assert pilha1.tamanho == 3
+
+# metodo empilhar
+def test_empilhar():
+    nova_pilha = pilha.Pilha()
+    test = nova_pilha.empilhar(3)
+    assert test == 3
+
+
+# metodo desenpilhar
+
+
+# metodo topo
+
+
+# tamanho da pilha
+
+
+# imprimir a pilha completa
+
+
+
+# checar se a pilha esta vazia
