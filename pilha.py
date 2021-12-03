@@ -17,4 +17,10 @@ class Pilha:
             if len(self.pilha_conteudo) == 0:
                 self.vazia = True
             return desempilhado
+    
+    def imprimir_pilha(self):
+        return self.pilha_conteudo
 
+    def esvaziar_pilha(self):
+        self.pilha_conteudo = []
+        self.vazia = True
