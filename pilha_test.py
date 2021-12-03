@@ -18,6 +18,9 @@ def test_desempilhar():
     nova_pilha.empilhar(5)
     nova_pilha.empilhar(10)
     test = nova_pilha.desempilhar()
+    nova_pilha.desempilhar()
+    nova_pilha.desempilhar()
+    nova_pilha.desempilhar()
     del(nova_pilha)
     assert test == 10
 
@@ -30,12 +33,19 @@ def test_desempilhar():
 
 
 # imprimir a pilha completa
-
+def test_imprimir_pilha():
+    nova_pilha = pilha.Pilha()
+    nova_pilha.empilhar(1)
+    nova_pilha.empilhar(2)
+    nova_pilha.empilhar(3)
+    nova_pilha.empilhar(4)
+    test = nova_pilha.imprimir_pilha()
+    esperado = [1,2,3,4]
+    del(nova_pilha)
+    assert test == esperado
 
 
 # checar se a pilha esta vazia
-
-
 
 def test_pilha_vazia():
     nova_pilha = pilha.Pilha()
