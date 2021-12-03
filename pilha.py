@@ -12,5 +12,9 @@ class Pilha:
         return item
 
     def desempilhar(self):
-        desempilhado = self.pilha_conteudo.pop()
-        return desempilhado
+        if self.vazia == False:
+            desempilhado = self.pilha_conteudo.pop()
+            if len(self.pilha_conteudo) == 0:
+                self.vazia = True
+            return desempilhado
+
