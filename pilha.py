@@ -1,7 +1,10 @@
 class Pilha:
-    tamanho = 0
+    vazia = False
+    pilha_conteudo = []
 
-    def __init__(self, tamanho):
-        self.tamanho = tamanho
-    def __str__(self):
-        return self.tamanho
+    def __init__(self, ):
+        pass
+
+    def empilhar(self, item):
+        self.pilha_conteudo.append(item)
+        return item
