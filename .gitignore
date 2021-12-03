@@ -1,1 +1,3 @@
 venv_estrutura_de_dados/
+.pytest_cache/
+__pycache__/
