@@ -11,6 +11,14 @@ def test_empilhar():
 
 
 # metodo desenpilhar
+def test_desempilhar():
+    nova_pilha = pilha.Pilha()
+    nova_pilha.empilhar(3)
+    nova_pilha.empilhar(5)
+    nova_pilha.empilhar(10)
+    test = nova_pilha.desempilhar()
+    assert test == 10
+
 
 
 # metodo topo
