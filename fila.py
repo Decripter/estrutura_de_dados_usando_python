@@ -8,8 +8,9 @@ class Fila:
         self.fila_conteudo.append(item)
 
     def desenfileirar(self):
-        ...
-
+        desenfileirado = self.fila_conteudo.pop(0)
+        return desenfileirado
+        
     def mostrar_inicio_da_fila(self):
         ...
 
