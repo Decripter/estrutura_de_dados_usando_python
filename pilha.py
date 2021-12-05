@@ -33,3 +33,5 @@ class Pilha:
     def esvaziar_pilha(self):
         self.vazia = True
         self.pilha_conteudo = []
+
+        
