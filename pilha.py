@@ -1,9 +1,18 @@
 class Pilha:
-    vazia = True
-    pilha_conteudo = []
+
+# os atributos foram movidos para __init__
+# fora do metodo init eles estavam gerando um problema durante os testes,
+# os atributos nao estavam sendo resetados e estavam passando de um teste para o outro
+# isso significa que os atributos estavam sendo cmpartilhados pelos objetos
+# já que os atributos nao tinham o parametro self eles na sao compartilhados por todos
+# os objetos criados a partir desta classe.
 
     def __init__(self, ):
-        pass
+        # movendo os atributos para dentro do metodo __init__ pois aqui eles sao atribuidos com o self que associa 
+        # o o atributo a cada instancia da classe
+        self.vazia = True
+        self.pilha_conteudo = []
+
 
     def empilhar(self, item):
         if self.vazia == True:
@@ -22,5 +31,5 @@ class Pilha:
         return self.pilha_conteudo
 
     def esvaziar_pilha(self):
-        self.pilha_conteudo = []
         self.vazia = True
+        self.pilha_conteudo = []
