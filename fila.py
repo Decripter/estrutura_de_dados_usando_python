@@ -2,8 +2,9 @@ class fila:
 
     def __init__(self):
         fila_conteudo = []
+        fila_vazia = True
 
-    def enfileirar(self):
+    def enfileirar(self, item):
         ...
 
     def desenfileirar(self):
@@ -17,4 +18,3 @@ class fila:
 
     def limpar_fila(self):
         ...
-        
