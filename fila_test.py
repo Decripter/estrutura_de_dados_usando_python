@@ -8,7 +8,8 @@ obj_fila =fila.Fila
 def nova_fila():
     fila_test = obj_fila()
     yield fila_test
-
+    
+@fixture
 def fila_preenchida():
     fila_test = obj_fila()
     fila_test.enfileirar(1)
@@ -18,9 +19,13 @@ def fila_preenchida():
     fila_test.enfileirar(5)
     yield fila_test
 
-def test_preencher_fila(nova_fila):
+def test_enfileirar(nova_fila):
     nova_fila.enfileirar(1)
     nova_fila.enfileirar(2)
     nova_fila.enfileirar(3)
     test = nova_fila.fila_conteudo
     assert test == [1, 2, 3]
+
+def test_desenfileirar(fila_preenchida):
+    test = fila_preenchida.desenfileirar()
+    assert test == 1
