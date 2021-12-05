@@ -39,7 +39,7 @@ def test_imprimir_pilha(nova_pilha):
     nova_pilha.empilhar(3)
     nova_pilha.empilhar(4)
     test = nova_pilha.imprimir_pilha()
-    esperado = [1,2,3,4]
+    esperado = [4, 3, 2, 1]
     assert test == esperado
 
 
@@ -58,5 +58,4 @@ def test_pilha_desempilhar_deixando_vazia(nova_pilha):
     nova_pilha.desempilhar()
     test = nova_pilha.vazia
     assert test == True
-    
     
