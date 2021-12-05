@@ -29,10 +29,18 @@ class Pilha:
                 self.vazia = True
             return desempilhado
     
+    def retorna_topo(self):
+        topo = self.pilha_conteudo[0]
+        return topo 
+
+    def verificar_tamanho(self):
+        return len(self.pilha_conteudo)
+
     def imprimir_pilha(self):
         return self.pilha_conteudo
 
     def esvaziar_pilha(self):
         self.vazia = True
         self.pilha_conteudo = []
+
 
