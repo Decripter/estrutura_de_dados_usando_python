@@ -33,3 +33,7 @@ def test_desenfileirar(fila_preenchida):
 def test_mostrar_inicio_fila(fila_preenchida):
     test = fila_preenchida.mostrar_inicio_da_fila()
     assert test == 1
+
+def test_mostra_tamanho_da_fila(fila_preenchida):
+    test = fila_preenchida.mostrar_tamanho_da_fila()
+    assert test == 5
