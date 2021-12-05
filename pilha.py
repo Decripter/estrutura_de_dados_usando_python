@@ -17,12 +17,14 @@ class Pilha:
     def empilhar(self, item):
         if self.vazia == True:
             self.vazia = False
-        self.pilha_conteudo.append(item)
+        head_list = [item]
+        tail_list = self.pilha_conteudo.copy()
+        self.pilha_conteudo=head_list+tail_list
         return item
 
     def desempilhar(self):
         if self.vazia == False:
-            desempilhado = self.pilha_conteudo.pop()
+            desempilhado = self.pilha_conteudo.pop(0)
             if len(self.pilha_conteudo) == 0:
                 self.vazia = True
             return desempilhado
@@ -34,4 +36,3 @@ class Pilha:
         self.vazia = True
         self.pilha_conteudo = []
 
-        
