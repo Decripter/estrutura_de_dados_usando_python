@@ -8,7 +8,7 @@ obj_fila =fila.Fila
 def nova_fila():
     fila_test = obj_fila()
     yield fila_test
-    
+
 @fixture
 def fila_preenchida():
     fila_test = obj_fila()
@@ -28,4 +28,8 @@ def test_enfileirar(nova_fila):
 
 def test_desenfileirar(fila_preenchida):
     test = fila_preenchida.desenfileirar()
+    assert test == 1
+
+def test_mostrar_inicio_fila(fila_preenchida):
+    test = fila_preenchida.mostrar_inicio_da_fila()
     assert test == 1
