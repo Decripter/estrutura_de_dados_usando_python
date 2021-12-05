@@ -15,7 +15,8 @@ class Fila:
         return self.fila_conteudo[0]
 
     def mostrar_tamanho_da_fila(self):
-        ...
+        tamanho = len(self.fila_conteudo)
+        return tamanho
 
     def limpar_fila(self):
         ...
