@@ -1,11 +1,11 @@
-class fila:
+class Fila:
 
     def __init__(self):
-        fila_conteudo = []
-        fila_vazia = True
+        self.fila_conteudo = []
+        self.fila_vazia = True
 
     def enfileirar(self, item):
-        ...
+        self.fila_conteudo.append(item)
 
     def desenfileirar(self):
         ...
