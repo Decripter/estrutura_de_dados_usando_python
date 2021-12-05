@@ -10,9 +10,9 @@ class Fila:
     def desenfileirar(self):
         desenfileirado = self.fila_conteudo.pop(0)
         return desenfileirado
-        
+
     def mostrar_inicio_da_fila(self):
-        ...
+        return self.fila_conteudo[0]
 
     def mostrar_tamanho_da_fila(self):
         ...
