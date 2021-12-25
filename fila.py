@@ -1,5 +1,4 @@
 class Fila:
-
     def __init__(self):
         self.fila_conteudo = []
         self.fila_vazia = True
